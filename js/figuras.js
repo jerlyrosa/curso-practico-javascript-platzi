@@ -1,73 +1,43 @@
+// //PI
+const PI = Math.PI;
+
 //Codigo del cuadrado
 
-console.group("Grupo cuadrado");
+// ARROW FUNCTION PERIMETRO CUADRADO
+const perimetroCuadrado = (lado) => lado * 4;
 
-const ladoCuadrado = 10;
-const perimetroCuadrado = ladoCuadrado * 4;
-const areaCuadrado = ladoCuadrado * ladoCuadrado;
+//ARROW FUNCTION AREA CUADRADO
+const areaCuadrado = (lado) => lado * lado;
 
-console.log(`Los lados del cuadrado miden: ${ladoCuadrado} cm`);
 
-console.log(`El perimtro  del cuadrado miden: ${perimetroCuadrado} cm`);
-
-console.log(`El area  del cuadrado miden: ${areaCuadrado} cm^2`);
-
-console.groupEnd();
 
 //Codigo del Triangualo
 
-console.group("Grupo Triangulo");
+//PERIMETRO TRIANGULO
+const perimetroTriangulo  = (lado1,lado2,base) =>  lado1 + lado2 + base;
 
-const ladoTriangulo1 = 6;
-const ladoTriangulo2 = 6;
-const baseTriangulo = 5;
-
-const alturaTriangulo = 5.5;
-
-const perimetroTriangulo  = ladoTriangulo1 + ladoTriangulo2 + baseTriangulo;
-
-const areaTrinagulo = (baseTriangulo * alturaTriangulo) / 2;
-
-console.log(`Los lados del trinagulo miden: ${ladoTriangulo1} cm, ${ladoTriangulo2} cm,  ${baseTriangulo} cm`);
-
-console.log(`La altura del trinagulo es de: ${alturaTriangulo}`)
-
-console.log(`El perimtro  del triangulo miden: ${perimetroTriangulo} cm`);
-
-console.log(`El area  del triangulo es ${areaTrinagulo} cm^2`);
+//ARROW FUNCTIONAREA TRIANGULO
+const areaTrinagulo = (base, altura) => (base * altura) / 2;
 
 
-console.groupEnd();
 
 //Codigo del circulo
 
-console.group("Grupo Circulo");
+
+//ARROW FUNCTION DIAMETRO CIRCULO
+const diametroCirculo = (radio) => radio * 2;
 
 
-//RADIO
-const radioCirculo = 4;
-
-//DIAMETRO
-const diametroCirculo = radioCirculo * 2;
-
-//PI
-const PI = Math.PI;
-
-//CIRCUNFERENCIA
-const perimetroCirculo = diametroCirculo  * PI
-
-//AREA
-const areaCirculo = (radioCirculo * radioCirculo ) * PI;
+//ARROW FUNCTION PERIMETRO CIRCULO
+const perimetroCirculo = (radio) => {
+    const diametro = diametroCirculo (radio);
+    return diametro * PI;
+}
 
 
-console.log(`El radio del circulo es de: ${radioCirculo} cm`);
-
-console.log(`El diametro del circulo es de: ${diametroCirculo} cm`);
-
-console.log(`El perimetro del circulo es de: ${perimetroCirculo} cm`);
-
-console.log(`El area del circulo es de: ${areaCirculo} cm^2`);
+//ARROW FUNCTION PERIMETRO CIRCULO
+const areaCirculo = (radio) =>(radio * radio ) * PI
 
 
-console.groupEnd();
+
 
