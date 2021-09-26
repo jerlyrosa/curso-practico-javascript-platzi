@@ -14,3 +14,5 @@ const count ={}
 }
 
 const results = mode(list);
+
+console.log(results);

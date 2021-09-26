@@ -21,6 +21,6 @@
 - Primer paso: definir las fórmulas
 - Segundo paso: implementar la fórmulas en JavaScript 
 - Tercer paso: crear funciones
-- Cuarto paso: integrar JS con HTML
+- Cuarto paso: integrar JS con HTML o si eres muy vago como yo; solo has la logica. 
 
 # curso-practico-javascript

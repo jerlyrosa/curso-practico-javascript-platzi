@@ -11,4 +11,4 @@ const MediaAritmetica = (values) =>{
 
 const results = MediaAritmetica(list);
 
-console.log(results)
+console.log(results);
