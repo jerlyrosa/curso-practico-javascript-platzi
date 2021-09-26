@@ -7,7 +7,6 @@ const getAverage = (values) =>{
 
 }  
 
-
 const  calcularMediana =(values)=>{
         const sortList = values.sort((a,b)=> a -b);
         const isEvent =  values.length % 2  === 0;
@@ -21,7 +20,7 @@ const  calcularMediana =(values)=>{
 
 }
 
-
 const results = calcularMediana(list);
 
-console.log(results)
+console.log(results);
+

@@ -1,7 +1,5 @@
 const list = [1, 2, 3, 1, 2, 3, 4, 2, 2, 2, 1];
 
-
-
 const mode = ( arr ) =>{
 const count ={}
     arr.map((item,index)=>{
@@ -16,5 +14,3 @@ const count ={}
 }
 
 const results = mode(list);
-
-console.log(results)
